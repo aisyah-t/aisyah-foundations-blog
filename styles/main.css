@@ -4,13 +4,16 @@ body {
 }
 
 div {
-    padding: 20px 20px 20px 20px;
+    padding: 20px; 
 }
 
 main {
     background-color: #96d1c7;
-    display: flex;
-    flex-direction: row;
+    display: block;
+}
+
+header {
+    text-align: right;
 }
 
 #navigation {
@@ -19,13 +22,25 @@ main {
     text-transform: uppercase;
 }
 
+.row {
+    display: flex;
+}
+
+
+.descriptions {
+    flex-basis: auto;
+}
+img {
+    border-radius: 50px;
+    flex-basis: auto;
+}
+
+
 .footer {
     font-size: 15pt;
 }
 
-img {
-    border-radius: 50px;
-}
+
 
 #copyright {
     text-align: center;

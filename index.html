@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/39ee8ced52.js"></script>
 </head>
 
 <body>    
@@ -17,31 +18,32 @@
         </span>
 
         <span id="navigation">
-          <a href="blog.html">Blog<a>
+          <a href="blog.html">Blog</a>
         </span>
 
       </div>
   </header>
 
   <main>
-      <div>
+      <div class='row'>
         <span>
           <img src="images/lifes-a-beach.jpeg" height="250px" width="250px" alt="Photo looking out towards Porirua Harbour from inside a cottage">
         </span>
-        
-        <span>
-          <h1>Kia ora, I'm Aisyah.</h1> 
-          <h3>I'm a web development student at Enspiral Dev Academy.</h3>
-          <p>A complete beginner in the world of web development, this is a medium for me to apply what I've learned during EDA Foundations and to share my reflections on my learning journey.
-          </p>
-          <p>See below for a list of my blog entries so far. This will be updated regularly throughout my time at EDA.</p>
-        </span>
+        <div class="descriptions">
+          <span>
+            <h1>Kia ora, I'm Aisyah.</h1> 
+            <h3>I'm a web development student at Enspiral Dev Academy.</h3>
+            <p>A complete beginner in the world of web development, this is a medium for me to apply what I've learned during EDA Foundations and to share my reflections on my learning journey.
+            </p>
+            <p>See below for a list of my blog entries so far. This will be updated regularly throughout my time at EDA.</p>
+          </span>
+        </div>
       </div>
-      
-      <div>
+      <div class='row'>
         <span>
           <img src="images/lifes-better-with-a-bike.jpeg" height="250px" width="250px" alt="Photo of a hand holding the handle of a pink bike facing a body of water and mountain range">
         </span>
+        <div class="descriptions">
         <h1>Blog entries</h1>
           <ul>
             <li><a href="blog/sprint1-technical.html">Sprint 1 Technical</a></li>
@@ -49,7 +51,10 @@
             <li>Sprint 1 Cultural</li>
             <li>Sprint 2 Cultural</li>
           </ul>
+        </div>
       </div>
+    </table>
+
     </main>
   
   <footer>
@@ -60,9 +65,9 @@
       </span>
 
       <span>
-        <img src="../images/githublogo.jpg">
-        <img src="../images/instagram-logo.jpg">
-        <img src="../images/linkedin-logo.jpg">
+        <i class="fa-github"></i>
+        <i class="fa-instagram"></i>
+        <i class="fa-linkedin"></i>
       </span>
 
       <span id="copyright">
