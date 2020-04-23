@@ -2,83 +2,94 @@
 <html lang="en">
 <head>
     <title>Kia ora, I'm Aisyah.</title>
-    <meta charset="utf-8">
-    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">    <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&amp;display=swap" rel="stylesheet">
+    <style>
+      .content {
+        max-width: 1377px;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
 
 <body>    
+<div class="content">
+    <a name="top"></a>
+    <header>
+      <nav class="header-navigation">
+        <span class="navigation-padding-right">
+          <a href="#about">About</a>
+        </span>
+        <span class="navigation-padding-right">
+          <a href="#blog">Blog</a>
+        </span>
+      </nav>
+    </header>
   
-  <a name="top"></a>
-  <header>
-    <nav class="header-navigation">
-      <span class="navigation-padding-right">
-        <a href="#about">About</a>
-      </span>
-      <span class="navigation-padding-right">
-        <a href="#blog">Blog</a>
-      </span>
-    </nav>
-  </header>
-
-  <main>
+    <main>
+      
+      <div class="title">
+        <h1 style="font-size:56pt; color: peachpuff; padding: 1em 0 0 0; text-shadow: black 2px 2px;">Kia ora, I'm Aisyah.</h1>          
+        <h2 style="font-size:30pt;  color: peachpuff;
+        text-shadow: black 2px 2px;
+        text-transform: lowercase;">A web development student at Enspiral Dev Academy.</h2>
+      </div>
+  
+      <a name="about"></a>
+  
+      <div class="introductions">
+        <img src="images/lifes-a-beach.jpeg" class="float-left" height="250px" width="250px" alt="Photo looking out towards Porirua Harbour from inside a cottage">        
+        <h1 id="about-me-heading">About Me</h1>
+          <p>I'm a complete beginner in the web development world.
+            This is a medium for me to apply what I've learned during <a href="https://devacademy.co.nz/">Enspiral Dev Academy (EDA)</a> 
+            Foundations and to share my reflections on my EDA learning journey.
+          This website is a work in progress and I hope to keep improving it as my coding experience develops.
+          </p><blockquote><i>"Be not afraid of growing slowly, be afraid only of standing still." - Chinese proverb.</i></blockquote>
+      </div>
+  
+      <a name="blog"></a>
+  
+      <div class="blog-entries">
+        <img src="images/lifes-better-with-a-bike.jpeg" class="float-right" height="250px" width="250px" alt="Photo of a hand holding on the handlebar of a bike facing a body of water with a mountain range in the background.">
+        <h1 id="blog-entries-heading">Blog entries</h1>
+        <p>Here are my blog entries so far. The list will be updated regularly during my time at EDA.</p>
+        <ul id="blog-entries-list">
+          <li><a href="blog/sprint1-technical.html">Sprint 1 Technical</a></li>
+          <li>Sprint 2 Technical: TBC</li>
+          <li>Sprint 1 Core: Identity, Values and Strengths Exploration</li>
+          <li>Sprint 2 Core: Learning Reflections</li>
+        </ul>
+  
+      </div>
+    </main>
     
-    <div class="title">
-        <h1>Kia ora, I'm Aisyah.</h1>
-        <h2>A web development student at Enspiral Dev Academy.</h2>
-    </div>
-
-    <a name="about"></a>
-
-    <div class="introductions">
-      <img src="images/lifes-a-beach.jpeg" class="float-left" height="250px" width="250px" alt="Photo looking out towards Porirua Harbour from inside a cottage">        
-      <h1 id="about-me-heading">About Me</h1>
-        <p>I'm a complete beginner in the web development world.
-          This is a medium for me to apply what I've learned during <a href="https://devacademy.co.nz/">Enspiral Dev Academy (EDA)</a> 
-          Foundations and to share my reflections on my EDA learning journey.
-        This website is a work in progress and I hope to keep improving it as my coding experience develops.
-        <blockquote><i>"Be not afraid of growing slowly, be afraid only of standing still." - Chinese proverb.</i></blockquote>
-        <p>Below is a list of my blog entries. The list will be updated regularly during my time at EDA.</p>
-    </div>
-
-    <a name="blog"></a>
-
-    <div class="blog-entries">
-      <img src="images/lifes-better-with-a-bike.jpeg" class="float-right" height="250px" width="250px" alt="Photo of a hand holding on the handlebar of a bike facing a body of water with a mountain range in the background.">
-      <h1 id="blog-entries-heading">Blog entries</h1>
-      <p>Some things for your reading pleasure.</p>
-      <ul id="blog-entries-list">
-        <li><a href="blog/sprint1-technical.html">Sprint 1 Technical</a></li>
-        <li>Sprint 2 Technical: TBC</li>
-        <li>Sprint 1 Core: Identity, Values and Strengths Exploration</li>
-        <li>Sprint 2 Core: Learning Reflections</li>
-      </ul>
-
-    </div>
-  </main>
+    <footer>
   
-  <footer>
-
-    <div>
-
-      <span class="footer navigation-padding-right">
-        <a href="#top">Page top</a>
-      </span>
-
-      <span class="footer navigation-padding-right">
-        <a href="#about">About</a>
-      </span>
-
-      <span class="footer navigation-padding-right">
-        <a href="#blog">Blog</a>
-      </span>
-
-      <span id="copyright">
-        <p>© 2020 Aisyah Tajudin. All rights reserved.</p>
-      </span>
-
-    </div>
-  </footer>
+      <div>
   
+        <span class="footer navigation-padding-right">
+          <a href="#top">Page top</a>
+        </span>
+  
+        <span class="footer navigation-padding-right">
+          <a href="#about">About</a>
+        </span>
+  
+        <span class="footer">
+          <a href="#blog">Blog</a>
+        </span>
+  
+        <span id="copyright">
+          <p>© 2020 Aisyah Tajudin. All rights reserved.</p>
+        </span>
+  
+      </div>
+    </footer>
+
+  
+</div>
 </body>
 </html>

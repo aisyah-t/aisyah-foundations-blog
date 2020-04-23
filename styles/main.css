@@ -8,8 +8,7 @@ body {
 header {
     background-color: bisque;
     padding: 20px;
-    height: 30px;
-    width: auto;
+    min-height: 30px;
 }
 
 .header-navigation {
@@ -25,21 +24,10 @@ header {
 
 .title {
     background-image: url("../images/pohara-beach-sunset-shells.jpg");
-    max-width: 1377px;
-    height: 843px;
-    margin: -28px;
-}
-
-h1 {
-    color: peachpuff;
-    padding: 1em 0 0 0;
-    text-shadow: black 2px 2px;
-}
-
-h2 {
-    color: peachpuff;
-    text-shadow: black 2px 2px;
-    text-transform: lowercase;
+    max-width: 1500px;
+    min-height: 800px;
+    margin: -56px;
+    font-family: 'Kalam', cursive;
 }
 
 #about-me-heading {
