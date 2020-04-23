@@ -19,6 +19,10 @@ header {
     text-transform: uppercase;
 }
 
+.navigation-padding-right {
+    padding-right: 100px;
+  }
+
 .title {
     background-image: url("../images/pohara-beach-sunset-shells.jpg");
     max-width: 1377px;
@@ -38,11 +42,38 @@ h2 {
     text-transform: lowercase;
 }
 
+#about-me-heading {
+    color: black;
+    font-size: 20pt;
+    padding: 0;
+    text-shadow: black 1px 1px;
+}
+
+#blog-entries-heading {
+    font-size: 20pt;
+    padding: 0;
+    text-shadow:peachpuff 1px 1px;
+}
+
 .introductions {
     background-color: bisque;
     border-radius: 2em;
     margin: 60px 20px;
     padding: 20px;
+    min-height: 250px;
+    min-width: fit-content;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+img {
+    border-radius: 1em;
 }
 
 .blog-entries {
@@ -51,20 +82,17 @@ h2 {
     margin: 60px 20px;
     padding: 20px;
     color: peachpuff;
+    min-height: 250px;
+    min-width: fit-content;
 }
 
 #blog-entries-list {
     list-style-type: none;
-
 }
-
-.navigation-padding-right {
-    padding-right: 100px;
-  }
 
 footer {
     background-color: bisque;
-    padding: 20px;
+    padding: 15px;
 }
 
 .footer {
@@ -74,5 +102,5 @@ footer {
 
 #copyright {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
 }
