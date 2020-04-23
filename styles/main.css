@@ -23,18 +23,6 @@ header {
     padding-right: 100px;
   }
 
-sample1 a:link { font-size:14px;color:red; }
-  2
-  #sample1 a:visited { font-size:15px;color:green; }
-  3
-  #sample1 a:hover { font-size:16px;color:blue; }
-  4
-  #sample1 a:active { font-size:17px;color:black; }
-  
-
-
-
-
 .title {
     background-image: url("../images/pohara-beach-sunset-shells.jpg");
     max-width: 1377px;
