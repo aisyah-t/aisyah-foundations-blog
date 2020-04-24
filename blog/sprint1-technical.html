@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Stories and Legends (PAGE title)</title>
-    <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
-  </head>
+<html lang="en">
+<head>
+    <title>CSS: class vs id Selectors</title>
+    <meta charset="utf-8">    
+    <link href="../styles/blog.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
   
   <body>
-    
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
+
+  <!--This is the container for centering page content-->
+    <div class="content">
+
+  <!--This is the navigation bar-->
+    <a name="top"></a>
+    <header>
+      <nav class="header-navigation">
+        
+        <span class="navigation-padding-right">
+          <a href="../index.html">Home</a>
+        </span>
+
+        <span class="navigation-padding-right">
+          <a href="../index.html#about">About</a>
+        </span>
+
+        <span class="navigation-padding-right">
+          <a href="../index.html#blog">Blog</a>
+        </span>
+
+      </nav>
+    </header>
+
+    <main>
+    <!--The content of for the blog goes here-->
+    <div class="blog-content">
+      <h2>The Story of Te Houtaewa</h2>
+    <h3>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em></h3></h2>
+    <h4>10 November 2010</h4>
     
     <p>
       Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
@@ -21,8 +48,37 @@
     <p>
       While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
     </p>
-    
-    <!-- this is a comment. -->
+    </div>
+    </main>
+
+<!--This is the footer with navigation links-->
+<footer>
   
+  <div>
+
+    <span class="footer navigation-padding-right">
+      <a href="#top">Page top</a>
+    </span>
+
+    <span class="footer navigation-padding-right">
+      <a href="../index.html">Home</a>
+    </span>
+
+    <span class="footer navigation-padding-right">
+      <a href="../index.html#about">About</a>
+    </span>
+
+    <span class="footer">
+      <a href=".../index.html#blog">Blog</a>
+    </span>
+
+    <span id="copyright">
+      <p id="copyright">© 2020 Aisyah Tajudin. All rights reserved.</p>
+    </span>
+
+  </div>
+</footer>
+
+  </div>
   </body>
 </html>
