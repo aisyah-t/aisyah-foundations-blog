@@ -76,6 +76,7 @@ img {
 
 #blog-entries-list {
     list-style-type: none;
+    text-align: left !important;
 }
 
 footer {
