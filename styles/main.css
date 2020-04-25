@@ -11,6 +11,25 @@ header {
     min-height: 30px;
 }
 
+p {
+    line-height: 26px;
+}
+
+a:link, a:active {
+    text-decoration: none;
+    color: crimson;
+}
+
+a:visited {
+    text-decoration: none;
+    color: teal;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: 105%;
+}
+
 .header-navigation {
     display: block;
     float: right;
@@ -84,7 +103,7 @@ footer {
     padding: 15px;
 }
 
-.footer {
+.footer-navigation {
     font-size: 15pt;
     text-align: center;
 }
