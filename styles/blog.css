@@ -1,10 +1,3 @@
-.content {
-    max-width: 1377px;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
-  }
-
 body {
     margin: 0;
     background-color: black;
@@ -17,6 +10,37 @@ header {
     background-color: bisque;
     padding: 20px;
     min-height: 30px;
+}
+
+img {
+    display: block;
+    padding: 1em;
+    margin: 20px auto 0px auto;
+    box-shadow: bisque 0px 0px 5px 0px;
+}
+
+code {
+    font-family: courier,monospace;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: peachpuff;
+    color: rgb(66, 51, 51);
+    padding: 3px 3px 3px;
+    border-radius: 3px;
+    position: relative;
+    top: -2px;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: peachpuff;
+    border-width: 5px;
+    width: 25%;
+}
+
+p {  
+    line-height: 26px;
 }
 
 .header-navigation {
@@ -47,10 +71,6 @@ header {
     float: right;
 }
 
-img {
-    border-radius: 1em;
-}
-
 .blog-entries {
     border-radius: 2em;
     box-shadow: bisque 0px 0px 5px 2px;
@@ -71,7 +91,7 @@ footer {
     padding: 15px;
 }
 
-.footer {
+.footer-navigation {
     font-size: 15pt;
     text-align: center;
 }
