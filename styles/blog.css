@@ -46,6 +46,10 @@ p {
     line-height: 26px;
 }
 
+h3 {
+    font-style: oblique;
+}
+
 a:link, a:active {
     text-decoration: none;
     color: crimson
