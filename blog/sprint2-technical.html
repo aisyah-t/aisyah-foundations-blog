@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Best Practice - class vs id Explained</title>
+    <meta charset="utf-8">
+<!--This is the CSS code for the div centering the whole website. 
+  Must be kept in the HTML file under the head parent or it won't work.-->
+  <style>
+    .content {
+    max-width: 1377px;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    }
+    </style>   
+    <link href="../styles/blog.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>    
+<!--This is the container for centering page content-->
+    <div class="content">
+<!--This is the navigation bar-->
+    <a name="top"></a>
+    <header>
+      <nav class="header-navigation">
+
+        <span class="navigation-padding-right">
+          <a href="../index.html">Home</a>
+        </span>
+
+        <span class="navigation-padding-right">
+            <a href="../index.html#about">About</a>
+        </span>
+
+        <span class="navigation-padding-right">
+          <a href="../index.html#blog">Blog</a>
+        </span>
+      </nav>
+    </header>
+  
+    <main>
+
+        <div class="blog-content">
+
+            <!--Put in the content for the blog here-->
+
+            <h2>
+            <!--Put in the title of the blog here-->
+            Best Practice - class vs id Explained
+            </h2>
+
+            <h5> 
+                <!--Put in the date of the blog here-->
+                25 April 2020
+            </h5>
+            <br>
+            <hr>
+            <br>
+            <p>
+                HTML elements like <code>div</code> , <code>p</code> , <code>span</code> create the structure of a webpage. 
+                Think of a house and the rooms in it like the kitchen, bedrooms and so on. Each element is like a different room in the house.
+            </p>
+            <p>
+                CSS selectors target specific elements in order to change the way the elements look. 
+                This is like customising the interior of a house like kitchen counter and cupboards.
+            </p>
+            <p>
+                One of the ways for CSS selectors to target elements is through the use of class and id.
+            </p>
+            <br>
+            <h4>What are class and id?</h4>
+            <p>
+                Class and id are like labels or identifiers that you can give to HTML elements.
+            </p>
+            <p>You assign a class or id to an element so that the CSS selector can target the specific element you want to change.
+                When the correct element is targeted you can then use CSS to change the way that element looks and behaves.
+            </p>
+            <p>
+                You can assign both class and id to an element at the same time, too.
+            </p>
+            <br>
+            <h4>What's the difference between class and id?</h4>
+            <p>
+                The differences between class and id are:
+                <ul><li>class can be applied multiple times on a page to multiple elements. 
+                        An element can also be given more than one class.</li>
+                    <li>id can only be used once in the whole page. An element can only have one id.</li>
+                </ul>
+            </p>
+            <br>
+            <h4>When do I use class and id?</h4>
+            <p> 
+                Given the differences outlined, when trying to decide whether to assign class or id to an element, ask yourself this question: 
+            </p>
+            <em>“Am I likely to repeat the same custom style anywhere else on the page?”</em>
+            <p>
+                If the answer is even a slight maybe, then use class.
+            </p>
+            <p>
+                For id, the general rule of thumb is to only use it for a style that you will not use anywhere else on the page.
+            </p>
+            <p>
+                In other words, if there’s something on your website that needs to look different to everything else or isn’t repeated elsewhere then you’d give it an id in order to change its look.
+            </p>
+            <p>
+            It’s worth noting also that id is treated as more important than class so it will override any custom properties defined by a class. 
+            For example, if in a <code>div</code> there’s an element that needs to look different to everything else in it then you can assign an id to this particular element.
+            </p>
+            <br>
+            <h4>Example of class and id in use</h4>
+            <p>
+                You may have a footer that has been styled in certain ways.
+                However it also contains copyright information that you’d like to change to a much smaller font size. This also happens to be the only line of text in the whole page that needs to look this small. 
+            </p>
+            <p>Here is a screenshot of such a footer as an example. As you can see, the footer contains links, and in much smaller font size, the copyright information.
+                <img src="../images/class-vs-id-footer-screenshot.jpg" alt="Screenshot of an example footer containing navigation links on the first line and on the second line copyright information in much smaller font size">
+            </p> 
+            <p>
+                Let’s look at the HTML code for the footer in the screenshot below.
+            </p>
+            <p>
+                The first three <code>span</code> elements which make up the links in the footer have been assigned the same class, <code>footer-navigation</code>. 
+                This is because all three of these elements need to look the same within the footer.
+            </p>
+            <p>
+                The last <code>span</code> element contains the copyright information that can be seen underneath the links and it has been assigned the id <code>copyright</code>. 
+                This is because while it belongs in the footer with the links it needs to look different to them.    
+                <img src="../images/class-vs-id-html-screenshot.jpg" alt="Screenshot of the HTML code for the example footer">
+            </p>
+            <p>
+                Now let’s have a look at the CSS code in the screenshot below.
+            </p>
+            <p>
+                As you can see the class <code>footer-navigation</code> gives the links in the footer a font size of 12pt and 30px padding on each side.
+            </p>
+            <p>
+                If the copyright information doesn't have an id it would look as big as the links.
+                The id <code>copyright</code> that it has been given overrides the properties in the class <code>footer-navigation</code> by specifying the copyright information a font size of 10pt instead.
+                <img src="../images/class-vs-id-css-screenshot.jpg" alt="Screenshot of the CSS code for the example footer">
+            </p>
+
+            <p>
+                I hope I’ve been able to explain clearly the best practices for assigning class and id. 
+                For more info on how and when to use class and id check out 
+                <a href="https://torquemag.io/2018/02/html-classes-and-ids/">HTML Classes and Ids – What They Are (And When to Use What)</a>
+            </p>
+    </main>
+<!--This is the footer with navigation links-->
+    <footer>
+  
+      <div>
+  
+        <span class="footer-navigation navigation-padding-right">
+          <a href="#top">Page top</a>
+        </span>
+  
+        <span class="footer-navigation navigation-padding-right">
+            <a href="../index.html">Home</a>
+        </span>
+
+        <span class="footer-navigation navigation-padding-right">
+          <a href="../index.html#about">About</a>
+        </span>
+  
+        <span class="footer-navigation">
+          <a href=".../index.html#blog">Blog</a>
+        </span>
+  
+        <span id="copyright">
+          <p>© 2020 Aisyah Tajudin. All rights reserved.</p>
+        </span>
+  
+      </div>
+    </footer>
+
+  
+</div>
+</body>
+</html>
