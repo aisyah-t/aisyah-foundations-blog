@@ -3,13 +3,16 @@ body {
     background-color: black;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: peachpuff;
 }
 
 header {
     background-color: bisque;
     padding: 20px;
     min-height: 30px;
+}
+
+main {
+    color: peachpuff;
 }
 
 img {
@@ -113,6 +116,5 @@ footer {
 
 #copyright {
     text-align: center;
-    font-size: 10px;
-    color: black;
+    font-size: 9pt;
 }
