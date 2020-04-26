@@ -5,8 +5,6 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 2em;
 
-}
-
 header {
     background-color: bisque;
     padding: 20px;
@@ -43,7 +41,7 @@ a:hover {
     background-image: url("../images/pohara-beach-sunset-shells.jpg");
     max-width: 1500px;
     min-height: 800px;
-    margin: -56px;
+    margin: -50px;
     font-family: 'Kalam', cursive;
 }
 
