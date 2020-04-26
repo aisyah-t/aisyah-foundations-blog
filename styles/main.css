@@ -64,7 +64,7 @@ a:hover {
     border-radius: 2em;
     margin: 60px 20px;
     padding: 20px;
-    min-height: 300px;
+    min-height: 280px;
     min-width: fit-content;
 }
 
@@ -86,7 +86,7 @@ img {
     margin: 60px 20px;
     padding: 20px;
     color: peachpuff;
-    min-height: 300px;
+    min-height: 280px;
     min-width: fit-content;
 }
 
