@@ -9,7 +9,7 @@ body {
 header {
     background-color: bisque;
     padding: 20px;
-    min-height: 30px;
+    min-height: 40px;
 }
 
 main {
@@ -108,6 +108,7 @@ a:hover {
 footer {
     background-color: bisque;
     padding: 15px;
+    max-height: 4.5em;
 }
 
 .footer-navigation {
