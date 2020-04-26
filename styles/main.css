@@ -3,16 +3,14 @@ body {
     background-color: black;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+
 }
 
 header {
     background-color: bisque;
     padding: 20px;
     min-height: 30px;
-}
-
-p {
-    line-height: 26px;
 }
 
 a:link, a:active {

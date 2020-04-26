@@ -3,6 +3,7 @@ body {
     background-color: black;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    line-height: 2em;
 }
 
 header {
@@ -40,10 +41,6 @@ hr {
     border-color: peachpuff;
     border-width: 5px;
     width: 25%;
-}
-
-p {  
-    line-height: 26px;
 }
 
 h3 {
