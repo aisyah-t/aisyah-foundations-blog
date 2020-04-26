@@ -4,11 +4,12 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     line-height: 2em;
+}
 
 header {
     background-color: bisque;
     padding: 20px;
-    min-height: 30px;
+    min-height: 40px;
 }
 
 a:link, a:active {
@@ -63,7 +64,7 @@ a:hover {
     border-radius: 2em;
     margin: 60px 20px;
     padding: 20px;
-    min-height: 250px;
+    min-height: 300px;
     min-width: fit-content;
 }
 
@@ -85,7 +86,7 @@ img {
     margin: 60px 20px;
     padding: 20px;
     color: peachpuff;
-    min-height: 250px;
+    min-height: 300px;
     min-width: fit-content;
 }
 
@@ -96,7 +97,8 @@ img {
 
 footer {
     background-color: bisque;
-    padding: 15px;
+    padding: 10px;
+    max-height: 4.5em;
 }
 
 .footer-navigation {
