@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: black;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     line-height: 2em;
 }
 
@@ -40,11 +40,16 @@ hr {
     border-top-style: dotted;
     border-color: peachpuff;
     border-width: 5px;
-    width: 25%;
+    width: 50%;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 h3 {
-    font-style: oblique;
+    font-style: italic;
+    font-size: x-large;
 }
 
 a:link, a:active {

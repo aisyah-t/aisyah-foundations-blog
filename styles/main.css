@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: black;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     line-height: 2em;
 }
 
@@ -49,14 +49,17 @@ a:hover {
 #about-me-heading {
     color: black;
     font-size: 20pt;
+    font-weight: bolder;
     padding: 0;
     text-shadow: black 1px 1px;
+    text-transform: uppercase;
 }
 
 #blog-entries-heading {
     font-size: 20pt;
     padding: 0;
     text-shadow:peachpuff 1px 1px;
+    text-transform: uppercase;
 }
 
 .introductions {
