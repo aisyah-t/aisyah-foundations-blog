@@ -6,6 +6,13 @@ body {
     line-height: 2em;
 }
 
+div.content {
+    max-width: 1377px;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
 header {
     background-color: bisque;
     padding: 20px;
