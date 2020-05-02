@@ -1,178 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Best Practice - class vs id Explained</title>
-    <meta charset="utf-8">  
+    <meta charset="utf-8">
     <link href="../styles/blog.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-<body>    
-<!--This is the container for centering page content-->
+<body>
+    <!--This is the container for centering page content-->
     <div class="content">
-<!--This is the navigation bar-->
-    <a name="top"></a>
-    <header>
-      <nav class="header-navigation">
+        <!--This is the navigation bar-->
+        <a name="top"></a>
+        <header>
+            <nav class="header-navigation">
 
-        <span class="navigation-padding-right">
-          <a href="../index.html">Home</a>
-        </span>
+                <span class="navigation-padding-right">
+                    <a href="../index.html">Home</a>
+                </span>
 
-        <span class="navigation-padding-right">
-            <a href="../index.html#about">About</a>
-        </span>
+                <span class="navigation-padding-right">
+                    <a href="../index.html#about">About</a>
+                </span>
 
-        <span class="navigation-padding-right">
-          <a href="../index.html#blog">Blog</a>
-        </span>
-      </nav>
-    </header>
-  
-    <main>
+                <span class="navigation-padding-right">
+                    <a href="../index.html#blog">Blog</a>
+                </span>
+            </nav>
+        </header>
 
-        <div class="blog-content">
+        <main>
 
-            <!--Put in the content for the blog here-->
+            <div class="blog-content">
 
-            <h2>
-            <!--Put in the title of the blog here-->
-            Best Practice - class vs id Explained
-            </h2>
+                <!--Put in the content for the blog here-->
 
-            <h5> 
-                <!--Put in the date of the blog here-->
-                25 April 2020
-            </h5>
-            <br>
-            <hr>
-            <br>
-            <p>
-                HTML elements like <code>div</code> , <code>p</code> , <code>span</code> create the structure of a webpage. 
-                Think of a house and the rooms in it like the kitchen, bedrooms and so on. Each element is like a different room in the house.
-            </p>
-            <p> 
-                CSS  can be used to change the look of an element. Think of CSS as the interior design and style of each room in the house.
-                In order to customise an HTML element using CSS, you need to target the element that you want to change.
-            </p>
-            <p>
-                One of the ways for CSS to target elements is through the use of class and id.
-            </p>
-            <br>
-            <h3>What are class and id?</h3>
-            <p>
-                Class and id are labels or identifiers that you can give to HTML elements. 
-            </p>
-            <p>You assign a class or id to an element so that CSS can target the correct element that you want to change.
-                When the correct element is targeted you can then specify how you want that element to look and behave.
-            </p>
-            <p>
-                You can assign both class and id to an element at the same time, too.
-            </p>
-            <br>
-            <h3>What's the difference between class and id?</h3>
-            <p>
-                The differences between class and id are:
-                <ul><li>class can be applied multiple times on a page to multiple elements. 
-                        An element can also be given more than one class. 
-                    <p>
-                        Going back to the analogy of the interior design of a house, using class to target an element is like 
-                        deciding on a thematic style such as shabby chic. The same style can be applied to different rooms in the house.
-                    </p>
-                </li>
-                    <li>id can only be used once in the whole page. An element can only have one id.
-                    <p>
-                        Think of using id as the interior designer identifying a statement piece in the room. 
-                        It's the one thing that is different to the thematic style of a room and isn't found elsewhere in the house.
-                    </p>
-                    </li>
-                </ul>
-            </p>
-            <br>
-            <h3>When do I use class and id?</h3>
-            <p> 
-                Now that the differences between class and id have been established, when trying to decide whether to assign class or id to an element, ask yourself this question: 
-            </p>
-            <em>“Am I likely to repeat the same custom style anywhere else on the page?”</em>
-            <p>
-                If the answer is even a slight maybe, then use class.
-            </p>
-            <p>
-                For id, the general rule of thumb is to only use it for a style that you will not use anywhere else on the page.
-            </p>
-            <p>
-                In other words, if there’s something on your website that needs to look different to everything else or isn’t repeated elsewhere then you’d give it an id in order to change its look.
-            </p>
-            <p>
-            It’s worth noting also that id is treated as more important than class so it will override any custom properties defined by a class. 
-            For example, if in a <code>div</code> container there’s an element that needs to look different to everything else in it then you can assign an id to this particular element.
-            </p>
-            <br>
-            <h3>Example of class and id in use</h3>
-            <p>
-                You may have a footer that has been styled in certain ways.
-                However it also contains copyright information that you’d like to change to a much smaller font size. This also happens to be the only line of text in the whole page that needs to look this small. 
-            </p>
-            <p>Here is a screenshot of such a footer as an example. As you can see, the footer contains links, and in much smaller font size, the copyright information.
-                <img src="../images/class-vs-id-footer-screenshot.jpg" alt="Screenshot of an example footer containing navigation links on the first line and on the second line copyright information in much smaller font size">
-            </p> 
-            <p>
-                Let’s look at the HTML code for the footer in the screenshot below.
-            </p>
-            <p>
-                The first three <code>span</code> elements which make up the links in the footer have been assigned the same class, <code>footer-navigation</code>. 
-                This is because all three elements need to look the same within the footer.
-            </p>
-            <p>
-                The last <code>span</code> element contains the copyright information that can be seen underneath the links and it has been assigned the id <code>copyright</code>. 
-                This is because while it belongs in the footer with the links it needs to look different to them.    
-                <img src="../images/class-vs-id-html-screenshot.jpg" alt="Screenshot of the HTML code for the example footer">
-            </p>
-            <p>
-                Now let’s have a look at the CSS code in the screenshot below.
-            </p>
-            <p>
-                As you can see, in the second set of CSS code the class <code>footer-navigation</code> gives the links in the footer 
-                the font size of 12pt and 30px padding on each side.
-            </p>
-            <p>
-                The last set of CSS code is the id <code>copyright</code> that has been assigned to the copyright information.
-                The id gives it the font size of 10pt instead.
-                <img src="../images/class-vs-id-css-screenshot.jpg" alt="Screenshot of the CSS code for the example footer">
-            </p>
+                <h2>
+                    <!--Put in the title of the blog here-->
+                    Best Practice - class vs id Explained
+                </h2>
 
-            <p>
-                I hope I’ve been able to explain clearly the best practices for assigning class and id. 
-                For more info on how and when to use class and id check out 
-                <a href="https://torquemag.io/2018/02/html-classes-and-ids/">HTML Classes and Ids – What They Are (And When to Use What)</a>.
-            </p>
-    </main>
-<!--This is the footer with navigation links-->
-    <footer>
-  
-        <span class="footer-navigation navigation-padding-right">
-          <a href="#top">Page top</a>
-        </span>
-  
-        <span class="footer-navigation navigation-padding-right">
-            <a href="../index.html">Home</a>
-        </span>
+                <h5>
+                    <!--Put in the date of the blog here-->
+                    25 April 2020
+                </h5>
+                <br>
+                <hr>
+                <br>
+                <p>
+                    HTML elements like <code>div</code> , <code>p</code> , <code>span</code> create the structure of a
+                    webpage.
+                    Think of a house and the rooms in it like the kitchen, bedrooms and so on. Each element is like a
+                    different room in the house.
+                </p>
+                <p>
+                    CSS can be used to change the look of an element. Think of CSS as the interior design and style of
+                    each room in the house.
+                    In order to customise an HTML element using CSS, you need to target the element that you want to
+                    change.
+                </p>
+                <p>
+                    One of the ways for CSS to target elements is through the use of class and id.
+                </p>
+                <br>
+                <h3>What are class and id?</h3>
+                <p>
+                    Class and id are labels or identifiers that you can give to HTML elements.
+                </p>
+                <p>You assign a class or id to an element so that CSS can target the correct element that you want to
+                    change.
+                    When the correct element is targeted you can then specify how you want that element to look and
+                    behave.
+                </p>
+                <p>
+                    You can assign both class and id to an element at the same time, too.
+                </p>
+                <br>
+                <h3>What's the difference between class and id?</h3>
+                <p>
+                    The differences between class and id are:
+                    <ul>
+                        <li>class can be applied multiple times on a page to multiple elements.
+                            An element can also be given more than one class.
+                            <p>
+                                Going back to the analogy of the interior design of a house, using class to target an
+                                element is like
+                                deciding on a thematic style such as shabby chic. The same style can be applied to
+                                different rooms in the house.
+                            </p>
+                        </li>
+                        <li>id can only be used once in the whole page. An element can only have one id.
+                            <p>
+                                Think of using id as the interior designer identifying a statement piece in the room.
+                                It's the one thing that is different to the thematic style of a room and isn't found
+                                elsewhere in the house.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <br>
+                <h3>When do I use class and id?</h3>
+                <p>
+                    Now that the differences between class and id have been established, when trying to decide whether
+                    to assign class or id to an element, ask yourself this question:
+                </p>
+                <em>“Am I likely to repeat the same custom style anywhere else on the page?”</em>
+                <p>
+                    If the answer is even a slight maybe, then use class.
+                </p>
+                <p>
+                    For id, the general rule of thumb is to only use it for a style that you will not use anywhere else
+                    on the page.
+                </p>
+                <p>
+                    In other words, if there’s something on your website that needs to look different to everything else
+                    or isn’t repeated elsewhere then you’d give it an id in order to change its look.
+                </p>
+                <p>
+                    It’s worth noting also that id is treated as more important than class so it will override any
+                    custom properties defined by a class.
+                    For example, if in a <code>div</code> container there’s an element that needs to look different to
+                    everything else in it then you can assign an id to this particular element.
+                </p>
+                <br>
+                <h3>Example of class and id in use</h3>
+                <p>
+                    You may have a footer that has been styled in certain ways.
+                    However it also contains copyright information that you’d like to change to a much smaller font
+                    size. This also happens to be the only line of text in the whole page that needs to look this small.
+                </p>
+                <p>Here is a screenshot of such a footer as an example. As you can see, the footer contains links, and
+                    in much smaller font size, the copyright information.
+                    <img src="../images/class-vs-id-footer-screenshot.jpg"
+                        alt="Screenshot of an example footer containing navigation links on the first line and on the second line copyright information in much smaller font size">
+                </p>
+                <p>
+                    Let’s look at the HTML code for the footer in the screenshot below.
+                </p>
+                <p>
+                    The first three <code>span</code> elements which make up the links in the footer have been assigned
+                    the same class, <code>footer-navigation</code>.
+                    This is because all three elements need to look the same within the footer.
+                </p>
+                <p>
+                    The last <code>span</code> element contains the copyright information that can be seen underneath
+                    the links and it has been assigned the id <code>copyright</code>.
+                    This is because while it belongs in the footer with the links it needs to look different to them.
+                    <img src="../images/class-vs-id-html-screenshot.jpg"
+                        alt="Screenshot of the HTML code for the example footer">
+                </p>
+                <p>
+                    Now let’s have a look at the CSS code in the screenshot below.
+                </p>
+                <p>
+                    As you can see, in the second set of CSS code the class <code>footer-navigation</code> gives the
+                    links in the footer
+                    the font size of 12pt and 30px padding on each side.
+                </p>
+                <p>
+                    The last set of CSS code is the id <code>copyright</code> that has been assigned to the copyright
+                    information.
+                    The id gives it the font size of 10pt instead.
+                    <img src="../images/class-vs-id-css-screenshot.jpg"
+                        alt="Screenshot of the CSS code for the example footer">
+                </p>
 
-        <span class="footer-navigation navigation-padding-right">
-          <a href="../index.html#about">About</a>
-        </span>
-  
-        <span class="footer-navigation">
-          <a href="../index.html#blog">Blog</a>
-        </span>
-  
-        <span id="copyright">
-          <p>© 2020 Aisyah Tajudin. All rights reserved.</p>
-        </span>
-  
-    </footer>
+                <p>
+                    I hope I’ve been able to explain clearly the best practices for assigning class and id.
+                    For more info on how and when to use class and id check out
+                    <a href="https://torquemag.io/2018/02/html-classes-and-ids/">HTML Classes and Ids – What They Are
+                        (And When to Use What)</a>.
+                </p>
+        </main>
+        <!--This is the footer with navigation links-->
+        <footer>
 
-  
-</div>
+            <span class="footer-navigation navigation-padding-right">
+                <a href="#top">Page top</a>
+            </span>
+
+            <span class="footer-navigation navigation-padding-right">
+                <a href="../index.html">Home</a>
+            </span>
+
+            <span class="footer-navigation navigation-padding-right">
+                <a href="../index.html#about">About</a>
+            </span>
+
+            <span class="footer-navigation">
+                <a href="../index.html#blog">Blog</a>
+            </span>
+
+            <span id="copyright">
+                <p>© 2020 Aisyah Tajudin. All rights reserved.</p>
+            </span>
+
+        </footer>
+
+
+    </div>
 </body>
+
 </html>
