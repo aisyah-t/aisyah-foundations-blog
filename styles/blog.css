@@ -23,7 +23,7 @@ main {
     color: peachpuff;
 }
 
-img {
+img, iframe {
     display: block;
     padding: 1em;
     margin: 20px auto 0px auto;
@@ -44,13 +44,11 @@ code {
 
 pre {
     font-family: courier,monospace;
-    font-size: 0.875em;
+    font-size: 0.85em;
     box-sizing: border-box;
     background-color: peachpuff;
     color: black;
-    overflow-x: auto;
     padding-top: 2em;
-    padding-left: 0em;
     line-height: 1.5em;
 }
 
@@ -72,7 +70,7 @@ h3 {
 
 a:link, a:active {
     text-decoration: none;
-    color: crimson
+    color: teal;
 }
 
 a:visited {
