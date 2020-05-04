@@ -65,7 +65,7 @@
           style the content of a website in various ways.
         </p>
         <a href="https://giphy.com/gifs/adweek-interior-design-home-decor-xT9IgrDvO6C4xd5tkI">
-          <img src="https://media.giphy.com/media/xT9IgrDvO6C4xd5tkI/giphy.gif" width="480" height="270"
+          <img src="https://media.giphy.com/media/xT9IgrDvO6C4xd5tkI/giphy.gif" 
             alt="GIF animating three unstyled rooms next to each other and a sneak peak at what they would look like after being styled."
             allowFullScreen>
         </a>
@@ -146,21 +146,21 @@
           by using a loop. Let's say you need to tell it to slice the cake six times.
           You might write a loop code like the one below to make the computer do so.
         </p>
-        <pre>
-          // Slice cake loop
+      <pre>
+      // Slice cake loop
 
-          for (let i = 0; i < 6; i++) {
-            console.log("Slice cake");
-           }
+        for (let i = 0; i < 6; i++) {
+          console.log("Slice cake");
+        }
 
-           // Expected output:
-           "Slice cake"
-           "Slice cake"
-           "Slice cake"
-           "Slice cake"
-           "Slice cake"
-           "Slice cake"
-        </pre>
+      // Expected output:
+        "Slice cake"
+        "Slice cake"
+        "Slice cake"
+        "Slice cake"
+        "Slice cake"
+        "Slice cake"
+      </pre>
         <br>
 
         <h3>JavaScript: Control flow</h3>
@@ -178,15 +178,15 @@
           <em>else</em> you wouldn't. In this case, below is an example of an 
           <code>if...else</code> code you'd write for the computer.
         </p>
-        <pre>
-          // Yoghurt with cake if...else control flow statement
+      <pre>
+      // Yoghurt with cake if...else control flow statement
 
-          if (friendWantsYoghurt == true) {
-            addYoghurt(); // Add yoghurt to plate with cake slice
-          } else { 
-            doNothing();  // Don't add yoghurt to plate with cake slice
-          }
-        </pre>
+        if (friendWantsYoghurt == true) {
+          addYoghurt(); // Add yoghurt to plate with cake slice
+        } else { 
+          doNothing();  // Don't add yoghurt to plate with cake slice
+        }
+      </pre>
         <br>
 
         <h3>JavaScript: Array and accessing data from an array</h3>
@@ -203,25 +203,25 @@
           lined up next to each other. In an array, you would tell the computer that the line 
           of hot drinks looks like this:
         </p>
-        <pre>
-          // Array of hot drinks options in sequential order
+      <pre>
+      // Array of hot drinks in index sequence
 
-          hotDrinksArray = ["coffee", "black tea", "green tea", "chai latte"]
-        </pre>
+        hotDrinksArray = ["coffee", "black tea", "green tea", "chai latte"]
+      </pre>
         <p>
           Given that you instinctively know the exact position of each drink option in the 
           line, you'd be able to grab the drink you need without looking at the labels. 
           To tell the computer to get a certain hot drink from the array you would reference 
           its index position in the array using bracket notation as below:
         </p>
-        <pre>
-          // Get a drink from hotDrinksArray
+      <pre>
+      // Get a drink from hotDrinksArray
 
-          hotDrinksArray[0]; // Get "coffee"
-          hotDrinksArray[1]; // Get "black tea"
-          hotDrinksArray[2]; // Get "green tea"
-          hotDrinksArray[3]; // Get "chai latte"
-        </pre>
+        hotDrinksArray[0]; // Get "coffee"
+        hotDrinksArray[1]; // Get "black tea"
+        hotDrinksArray[2]; // Get "green tea"
+        hotDrinksArray[3]; // Get "chai latte"
+      </pre>
         <br>
         <h3>JavaScript: Object and accessing data from an object</h3>
         <p>
@@ -237,40 +237,40 @@
           can be found. In an object, you would tell the computer the location (named property) 
           and the hot drink in it (value) like below:
         </p>
-        <pre>
-          // Object specifying location of hot drinks options in kitchen
+      <pre>
+      // Object specifying location of hot drinks in kitchen
 
-          hotDrinksLocationObject = {
-            kitchenCounter: "coffee",
-            topShelf: "black tea",
-            middleShelf: "green tea",
-            bottomShelf: "chai latte",
-          }
-        </pre>
+        hotDrinksLocationObject = {
+        kitchenCounter: "coffee",
+        topShelf: "black tea",
+        middleShelf: "green tea",
+        bottomShelf: "chai latte",
+        }
+      </pre>
         <p>
           Now that you've defined the location of each hot drink to the computer in an object,
           you would tell it to get a specific drink by pairing the object and property names 
           using dot notation like so:
         </p>
-        <pre>
-          // Get a drink from hotDrinksLocationObject using dot notation
+      <pre>
+      // Get a drink from hotDrinksLocationObject using dot notation
 
-          hotDrinksLocationObject.kitchenCounter; // Get "coffee"
-          hotDrinksLocationObject.topShelf;       // Get "black tea"
-          hotDrinksLocationObject.middleShelf;    // Get "green tea"
-          hotDrinksLocationObject.bottomShelf;    // Get "chai latte"
-        </pre>
+        hotDrinksLocationObject.kitchenCounter; // Get "coffee"
+        hotDrinksLocationObject.topShelf;       // Get "black tea"
+        hotDrinksLocationObject.middleShelf;    // Get "green tea"
+        hotDrinksLocationObject.bottomShelf;    // Get "chai latte"
+      </pre>
         <p>
           You can also use bracket notation for the property name instead, as shown in 
           the example below. Normally you only need to do this if the property name has 
           special characters or spaces. Make sure you also wrap the property name in single 
           or double quotes if using bracket notation.
         </p>
-        <pre>
-          // Get a drink from hotDrinksLocationObject using bracket notation
+      <pre>
+      // Get a drink from hotDrinksLocationObject using bracket notation
 
-          hotDrinksLocationObject['kitchenCounter']; // Get "coffee"
-        </pre>
+        hotDrinksLocationObject['kitchenCounter']; // Get "coffee"
+      </pre>
         <br>
         <!--As if talking to a non-technical friend, explain what functions are 
           and why they are useful.-->
