@@ -111,6 +111,16 @@ a:hover {
     float: right;
 }
 
+.rating-tag {
+    font-size: 0.875em;
+    box-sizing: border-box;
+    background-color: peachpuff;
+    color: black;
+    padding: 0.25em;
+    border-radius: 3px;
+    position: relative;
+}
+
 .blog-entries {
     border-radius: 2em;
     box-shadow: bisque 0px 0px 5px 2px;
