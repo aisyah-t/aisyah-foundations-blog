@@ -6,17 +6,27 @@ body {
     line-height: 2em;
 }
 
+header {
+    background-color: bisque;
+    padding: 20px;
+    min-height: 40px;
+}
+
+img {
+    border-radius: 1em;
+}
+
+footer {
+    background-color: bisque;
+    padding: 10px;
+    max-height: 4.5em;
+}
+
 div.content {
     max-width: 1377px;
     margin: auto;
     padding: 0;
     overflow: hidden;
-}
-
-header {
-    background-color: bisque;
-    padding: 20px;
-    min-height: 40px;
 }
 
 a:link, a:active {
@@ -51,22 +61,8 @@ a:hover {
     min-height: 800px;
     margin: -50px;
     font-family: 'Kalam', cursive;
-}
-
-#about-me-heading {
-    color: black;
-    font-size: 20pt;
-    font-weight: bolder;
-    padding: 0;
-    text-shadow: black 1px 1px;
-    text-transform: uppercase;
-}
-
-#blog-entries-heading {
-    font-size: 20pt;
-    padding: 0;
-    text-shadow:peachpuff 1px 1px;
-    text-transform: uppercase;
+    color: peachpuff;
+    text-shadow: black 3px 2px 2px;
 }
 
 .introductions {
@@ -86,10 +82,6 @@ a:hover {
     float: right;
 }
 
-img {
-    border-radius: 1em;
-}
-
 .blog-entries {
     border-radius: 2em;
     box-shadow: bisque 0px 0px 5px 2px;
@@ -100,20 +92,39 @@ img {
     min-width: fit-content;
 }
 
-#blog-entries-list {
-    list-style-type: none;
-    text-align: left !important;
-}
-
-footer {
-    background-color: bisque;
-    padding: 10px;
-    max-height: 4.5em;
-}
-
 .footer-navigation {
     font-size: 15pt;
     text-align: center;
+}
+
+#title-heading {
+    font-size:56pt; 
+    padding: 1em 0 0 0; 
+}
+
+#title-subheading {
+    font-size: xx-large;
+}
+
+#about-me-heading {
+    color: black;
+    font-size: 20pt;
+    font-weight: bolder;
+    padding: 0;
+    text-shadow: black 1px 1px;
+    text-transform: uppercase;
+}
+
+#blog-entries-heading {
+    font-size: 20pt;
+    padding: 0;
+    text-shadow:peachpuff 1px 1px;
+    text-transform: uppercase;
+}
+
+#blog-entries-list {
+    list-style-type: none;
+    text-align: left !important;
 }
 
 #copyright {
