@@ -2,4 +2,4 @@
 
 # Blog for Enspiral Dev Academy Foundations
 
-This blog/website was built using HTML and CSS. This is the first time I have built a website using solely code.
+This blog/website was built using HTML and CSS. It was the first time I built a website using solely code.
