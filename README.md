@@ -1,4 +1,4 @@
-# https://aisyah-t.github.io/aisyah-foundations-blog.github.io/
+# https://aisyah-t.github.io/aisyah-foundations-blog/
 
 # Blog for Enspiral Dev Academy Foundations
 
